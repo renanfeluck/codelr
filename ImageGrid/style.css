@@ -1,0 +1,30 @@
+html,
+body {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: flex;
+  max-width: 100%;
+  gap: 12px;
+}
+
+.destaque {
+  display: flex;
+  flex: 1;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  gap: 12px;
+}
+
+.grid img {
+  width: calc(50% - 12px);
+}

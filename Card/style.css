@@ -1,0 +1,85 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #323232;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.card {
+  height: 254px;
+  color: white;
+  display: flex;
+  gap: 5px;
+  overflow: visible;
+}
+
+.card .item {
+  border-radius: 10px;
+  width: 150px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #bababa;
+}
+
+.item svg {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 6px;
+}
+
+.item:hover > svg,
+.item:hover span {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
+
+.item--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 24px;
+  gap: 12px;
+}
+
+.quantity {
+  font-size: 36px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #fff;
+}
+
+.text {
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #000;
+}
+
+.text::after {
+  content: "";
+  border-bottom: 1px solid #000;
+  display: flex;
+  width: 0;
+  height: 0;
+}
+
+.item:hover .text::after {
+  width: 100%;
+  transition: all 0.3s;
+  margin: auto;
+}
